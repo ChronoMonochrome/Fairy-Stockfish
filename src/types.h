@@ -380,6 +380,8 @@ enum Value : int {
   WazirValueMg             = 400,   WazirValueEg             = 350,
   CommonerValueMg          = 700,   CommonerValueEg          = 900,
   CentaurValueMg           = 1800,  CentaurValueEg           = 1900,
+  SissaValueMg             = 1800,  SissaValueEg             = 1900,
+  RetarQueenValueMg        = 838,   RetarQueenValueEg         = 882,
 
   MidgameLimit  = 15258, EndgameLimit  = 3915
 };
@@ -393,7 +395,7 @@ enum PieceType {
   SHOGI_PAWN, LANCE, SHOGI_KNIGHT, GOLD, DRAGON_HORSE,
   CLOBBER_PIECE, BREAKTHROUGH_PIECE, IMMOBILE_PIECE, CANNON, JANGGI_CANNON,
   SOLDIER, HORSE, ELEPHANT, JANGGI_ELEPHANT, BANNER,
-  WAZIR, COMMONER, CENTAUR,
+  WAZIR, COMMONER, CENTAUR, SISSA, RETAR_QUEEN,
 
   CUSTOM_PIECES,
   FAIRY_PIECES = QUEEN + 1,
