@@ -392,7 +392,7 @@ namespace {
         v->remove_piece(KING);
         v->remove_piece(QUEEN);
         v->add_piece(COMMONER, 'k');
-        v->add_piece(WAZIR, 'q');
+        v->add_piece(RETAR_QUEEN, 'q');
         v->castlingKingPiece = COMMONER;
         v->extinctionValue = -VALUE_MATE;
         v->extinctionPieceTypes = {COMMONER};
