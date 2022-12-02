@@ -147,12 +147,14 @@ namespace {
         while (b1)
         {
             Square to = pop_lsb(b1);
+            if (to != SQ_B3 && to != SQ_B4)
             *moveList++ = make_move(to - Up, to);
         }
 
         while (b2)
         {
             Square to = pop_lsb(b2);
+            if (to != SQ_B3 && to != SQ_B4)
             *moveList++ = make_move(to - Up - Up, to);
         }
     }
