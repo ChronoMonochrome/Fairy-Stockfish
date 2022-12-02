@@ -391,8 +391,10 @@ namespace {
         v->variantTemplate = "atomic";
         v->remove_piece(KING);
         v->remove_piece(QUEEN);
+        v->remove_piece(KNIGHT);
         v->add_piece(COMMONER, 'k');
         v->add_piece(RETAR_QUEEN, 'q');
+        v->add_piece(RETAR_KNIGHT, 'n');
         v->castlingKingPiece = COMMONER;
         v->extinctionValue = -VALUE_MATE;
         v->extinctionPieceTypes = {COMMONER};
