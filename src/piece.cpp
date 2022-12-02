@@ -218,7 +218,7 @@ void PieceMap::init(const Variant* v) {
   add(COMMONER, from_betza("K", "commoner"));
   add(CENTAUR, from_betza("KN", "centaur"));
   add(SISSA, from_betza("aivsQ", "sissa")); // https://www.chessvariants.com/piececlopedia.dir/sissa.html
-  add(RETAR_QUEEN, from_betza("F3W3", "retarQueen"));
+  add(RETAR_QUEEN, from_betza("F4W4", "retarQueen"));
   add(KING, from_betza("K", "king"));
   // Add custom pieces
   for (PieceType pt = CUSTOM_PIECES; pt <= CUSTOM_PIECES_END; ++pt)
