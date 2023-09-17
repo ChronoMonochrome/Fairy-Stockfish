@@ -145,6 +145,11 @@ public:
   // If the SAN move wasn't found the position remains unchanged. Alternatively, implement a direct conversion.
   bool push_san(std::string sanMove, Notation notation) {
     Move foundMove = MOVE_NONE;
+
+    if (!sanMove.empty() && (sanMove.back() == '+' || sanMove.back() == '#')) {
+      sanMove.pop_back();
+    }
+
     for (const ExtMove& move : MoveList<LEGAL>(pos)) {
       if (sanMove == SAN::move_to_san(this->pos, move, notation)) {
         foundMove = move;
